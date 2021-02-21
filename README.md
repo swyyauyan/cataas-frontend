@@ -12,5 +12,12 @@ VUE_APP_BACKEND_HOST = <backend host>
     $ npm install
     $ npm start
 
-### Run tests
+### Run tests - Unit test with mocha and chai
     $ npm run test:unit
+
+### Run tests - E2E test with cypress
+Test it in terminal:
+    $ npm run cypress
+
+Test it in GUI:
+    $ npm run cypress-gui

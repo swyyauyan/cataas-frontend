@@ -14,7 +14,7 @@
             </div>
             <br>
             <p><img class = "cat-view-icon" src="../assets/cat_icon_2.png"> Special requirement...? <img class = "cat-view-icon" src="../assets/cat_icon_2.png"></p>
-            <button v-on:click="getMovingCats">Get moving cats!</button>
+            <button v-on:click="getMovingCats" id="buttonGetMoveCat">Get moving cats!</button>
             <br>
             <br>
             <div>
