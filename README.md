@@ -1,29 +1,16 @@
 # catass-frontend
 
-## Project setup
-```
-npm install
+A simple Vue project to get the cat from [CATAAS](https://cataas.com/#/).
+
+### Configuration
+Please create the `.env` file and add the following variables:
+```sh
+VUE_APP_BACKEND_HOST = <backend host>
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Start the server
+    $ npm install
+    $ npm start
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Run tests
+    $ npm run test:unit
