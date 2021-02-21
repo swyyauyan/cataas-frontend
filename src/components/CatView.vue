@@ -6,11 +6,11 @@
             <br>
             <div>
                 <label><img class = "cat-view-icon" src="../assets/cat_icon_2.png"> in row: </label>
-                <input @change="getPictures" v-model="catTableCol" type="number" id="catTableCol" name="catTableCol">
+                <input @change="getPictures" v-model="catTableRow" type="number" id="catTableRow" name="catTableRow" :disabled='isDisabled'>
             </div>
             <div>
                 <label><img class = "cat-view-icon" src="../assets/cat_icon_3.png"> in column: </label>
-                <input @change="getPictures" v-model="catTableRow" type="number" id="catTableRow" name="catTableRow">
+                <input @change="getPictures" v-model="catTableCol" type="number" id="catTableCol" name="catTableCol" :disabled='isDisabled'>
             </div>
             <br>
             <p><img class = "cat-view-icon" src="../assets/cat_icon_2.png"> Special requirement...? <img class = "cat-view-icon" src="../assets/cat_icon_2.png"></p>
@@ -44,6 +44,11 @@ export default {
   }),
   created () {
     this.getPictures()
+  },
+  computed: {
+    isDisabled () {
+      return this.isMovingCat === true || this.isTalkingCat === true
+    }
   },
   methods: {
     getTalkingCat: async function (event) {

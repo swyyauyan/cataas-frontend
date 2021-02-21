@@ -2,8 +2,8 @@
   <div class="cat-table-view">
     <hr>
     <table class="cat-table">
-        <tr v-for="(a, i) in +catTableCol" v-bind:key="i">
-            <td v-for="(b, j) in +catTableRow" v-bind:key="j">
+        <tr v-for="(a, i) in +catTableRow" v-bind:key="i">
+            <td v-for="(b, j) in +catTableCol" v-bind:key="j">
             <img @click="clickMethod(catPhoto[getCounter(b, i)])" class="cat-table-result" v-bind:src="catPhoto[getCounter(b, i)]||'/assets/cat_wait.gif'" >
             </td>
         </tr>
@@ -14,9 +14,6 @@
 <script>
 export default {
   name: 'CatTable',
-  data: () => ({
-    counter: -1
-  }),
   props: ['catTableCol', 'catTableRow', 'catPhoto'],
   methods: {
     getCounter: function (b, i) {
