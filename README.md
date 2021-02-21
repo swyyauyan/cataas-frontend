@@ -18,10 +18,10 @@ VUE_APP_BACKEND_HOST = <backend host>
 ### Run tests - E2E test with cypress
 Test it in terminal:
 ```sh
-    $ npm run cypress
+$ npm run cypress
 ```
 
 Test it in GUI:
 ```sh
-    $ npm run cypress-gui
+$ npm run cypress-gui
 ```
