@@ -2,6 +2,9 @@
 
 A simple Vue project to get the cat from [CATAAS](https://cataas.com/#/).
 
+### Component architecture
+![Image of Component architecture](https://github.com/swyyauyan/cataas-frontend/blob/master/public/component-architecture.png?raw=true)
+
 ### Configuration
 Please create the `.env` file and add the following variables:
 ```sh
