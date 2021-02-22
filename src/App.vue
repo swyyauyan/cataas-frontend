@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <cat-header></cat-header>
     <cat-view></cat-view>
   </div>
@@ -21,7 +19,6 @@ export default {
 </script>
 
 <style lang="sass">
-
 #app
   font-family: Avenir, Helvetica, Arial, sans-serif
   -webkit-font-smoothing: antialiased
@@ -29,5 +26,4 @@ export default {
   text-align: center
   color: #2c3e50
   width: 100%
-
 </style>
